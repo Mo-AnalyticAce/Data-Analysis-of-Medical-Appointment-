@@ -27,63 +27,14 @@ Identify appointment trends and peak periods.
 Understand payment preferences.
 
 ##Dataset Description
+DThe project integrates data from multiple healthcare-related tables to provide a complete view of clinic performance. 
+Key columns include:
 
-The project utilizes five relational tables:
-
-Patients Table
-Fields include:
-
-Patient ID
-Gender
-Age
-Contact Information
-
-Appointments Table
-Contains appointment scheduling and attendance records.
-
-Fields include:
-
-Appointment ID
-Patient ID
-Doctor ID
-Appointment Date
-Appointment Status
-Doctors Table
-
-Contains doctor information.
-
-Fields include:
-
-Doctor ID
-Doctor Name
-Specialization
-Treatments Table
-
-Contains treatment details.
-
-Fields include:
-
-Treatment ID
-Treatment Name
-Cost
-Billing Table
-
-Contains financial transaction records.
-
-Fields include:
-
-Billing ID
-Patient ID
-Treatment ID
-Payment Method
-Revenue Amount
-Data Preparation
-SQL Data Cleaning
-
-Several SQL transformations were performed before loading the data into Power BI.
-
-Derived Columns
-Age Group
+Patient Table: Includes Patient ID, Gender, and derived Age Groups (e.g., Young Adults, Middle Aged).  
+Appointment Table: Tracks Appointment ID, Appointment Status (Completed, Cancelled, No-show, Scheduled), Appointment Date, and the Day of the Week.  
+Doctor Table: Contains Doctor ID to monitor individual workloads and cancellation rates.  
+Treatment Table: Includes Treatment ID, Treatment Type (e.g., Chemotherapy, MRI), and the baseline Cost of the procedure.  
+Billing Table: Contains Billing ID, Patient ID, Treatment ID, Billing Amount (Revenue), Payment Status, and Payment Methods (Credit Card, Insurance, Cash).  
 
 ##Tools Used
 Microsoft Excel: Used for initial data exploration to understand the layout and structure of the healthcare dataset.
@@ -143,5 +94,30 @@ How People Pay: Most patients prefer to pay with a Credit Card, followed by Insu
 Most Busy Doctors: Doctors D001 and D003 finished the highest number of appointments (6 each).
 
 Highest Cancellations: Doctor D002 had the most cancelled appointments (8), followed by Doctor D001 (7)
+
+##Strategic Recommendations
+The Problem: Over half of all booked slots are wasted because patients cancel or do not show up (51.50% combined).
+
+The Fix: Send automatic text or WhatsApp reminders 24 hours before the appointment date to let patients easily confirm or change their slots.
+
+The Problem: Tuesdays and Wednesdays are packed, but Thursdays are very slow.
+
+The Fix: Move routine check-ups and non-urgent appointments to Thursdays to balance the weekly schedule.
+
+The Problem: Doctors D002 and D001 have the highest number of cancellations (8 and 7 dropped slots).
+
+The Fix: Review these specific doctors' schedules to see if they are being overbooked or if their patients are experiencing long wait times.
+
+The Problem: Chemotherapy, MRIs, and X-Rays are your most utilized and highest-cost procedures.
+
+The Fix: Keep these specific medical machines well-maintained and schedule regular service checks to avoid any clinic downtime.
+
+The Problem: Chemotherapy is your biggest revenue driver, and most patients prefer paying with Credit Cards or Insurance.
+
+The Fix: Make sure insurance approvals for high-cost treatments are processed quickly so the clinic does not face payment delays.
+
+The Problem: Young adults (19–35) and male patients make up the largest share of clinic visits.
+
+The Fix: Design health awareness campaigns or flexible after-hours booking slots that target this active group to keep them engaged.
 
 
