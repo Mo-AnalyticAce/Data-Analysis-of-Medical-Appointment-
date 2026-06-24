@@ -85,4 +85,9 @@ Several SQL transformations were performed before loading the data into Power BI
 Derived Columns
 Age Group
 
+##Data Cleaning/Preparation
+Created Patient Age Groups: Grouped raw patient ages into defined ranges (e.g., 0–18, 19–35, 36–50, 51–65, 66+) to enable clean demographic and distribution analysis.
+
+Extracted Day of Week: Formatted the appointment date column to extract the literal day of the week (e.g., Monday, Tuesday) to track operational trends and peak hospital days.
+
 Patients were grouped into meaningful categories:
