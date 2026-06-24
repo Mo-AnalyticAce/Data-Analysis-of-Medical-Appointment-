@@ -85,9 +85,24 @@ Several SQL transformations were performed before loading the data into Power BI
 Derived Columns
 Age Group
 
+##Tools Used
+Microsoft Excel: Used for initial data exploration to understand the layout and structure of the healthcare dataset.
+
+SQL (SSMS): Used for data cleaning and transformation, specifically using conditional logic to create patient age groups and extracting the day of the week from the appointment date column.
+
+Power BI: Used for building the interactive dashboard, configuring filters to slice data, and visualizing healthcare insights.
+
+DAX: Used for creating calculated measures to isolate completed, cancelled, and no-show appointments, and to calculate their respective percentage rates.
+
 ##Data Cleaning/Preparation
 Created Patient Age Groups: Grouped raw patient ages into defined ranges (e.g., 0–18, 19–35, 36–50, 51–65, 66+) to enable clean demographic and distribution analysis.
 
 Extracted Day of Week: Formatted the appointment date column to extract the literal day of the week (e.g., Monday, Tuesday) to track operational trends and peak hospital days.
 
+##Data Modeling & DAX Measures
+Calculated Appointment Volumetrics: Formulated distinct counting filters on the core dataset using the appointment status column to dynamically isolate and aggregate individual running totals for completed, cancelled, and no-show bookings.
+
+Calculated Performance Rates: Combined the individual appointment status metrics into logical division operations against the grand total of scheduled bookings to continuously recalculate the real-time completion, cancellation, and no-show percentages.
+
+##
 Patients were grouped into meaningful categories:
