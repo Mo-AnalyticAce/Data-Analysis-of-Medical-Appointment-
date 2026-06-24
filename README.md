@@ -111,6 +111,8 @@ Calculated Appointment Volumetrics: Formulated distinct counting filters on the 
 
 Calculated Performance Rates: Combined the individual appointment status metrics into logical division operations against the grand total of scheduled bookings to continuously recalculate the real-time completion, cancellation, and no-show percentages.
 
+##Dashboard Overview
+The Healthcare Management Dashboard is a Business Intelligence solution designed to analyze hospital operations, patient appointments, doctor performance, treatment utilization, billing activities, and revenue generation. The project integrates data from multiple healthcare-related tables to provide actionable insights that support operational efficiency, patient management, and strategic decision-making.By tracking key metrics like appointment completion rates, cancellations, and no-shows, it allows stakeholders to quickly spot scheduling risks, identify peak operational days, and reduce revenue leaks from missed slots.  
 ##Key Insights
 
 ###Appointment Problems
@@ -140,6 +142,6 @@ How People Pay: Most patients prefer to pay with a Credit Card, followed by Insu
  ###Doctor Breakdown
 Most Busy Doctors: Doctors D001 and D003 finished the highest number of appointments (6 each).
 
-Highest Cancellations: Doctor D002 had the most cancelled appointments (8), followed by Doctor D001 (7).
-##
-Patients were grouped into meaningful categories:
+Highest Cancellations: Doctor D002 had the most cancelled appointments (8), followed by Doctor D001 (7)
+
+
